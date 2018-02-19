@@ -1,5 +1,6 @@
 import express from 'express'
 import TodoRoute from './todo/todo.route'
+import AuthRoute from './auth/auth.route'
 const router = express.Router()
 
 router.route('/health-check')
@@ -10,6 +11,7 @@ router.route('/health-check')
             msg: 'ok'
         })
     })
-router.use('/todo',TodoRoute)
+router.use('/todo', TodoRoute)
+router.use('/auth', AuthRoute)
 
 export default router

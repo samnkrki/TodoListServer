@@ -29,6 +29,14 @@ app.get('/', (req, res) => {
     res.send('Todo-list Application')
 })
 
+app.use((err, req, res, next) => {
+
+    res.status(err.status || 500).json({
+        msg: err.message,
+        stack: err.stack,
+    })
+})
+
 app.listen(port, () => {
     console.log(`The todo-list server islistening on port ${port}`)
 })
