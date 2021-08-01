@@ -1,0 +1,10 @@
+{
+  "verbose": false,
+  "watch": ["./src"],
+  "delay": 10000,
+  "ext": "js",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "babel-node"
+}
