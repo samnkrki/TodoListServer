@@ -1,4 +1,4 @@
-FROM node;14-alpine as base
+FROM node:14-alpine as base
 RUN mkdir -p /usr/src/todo-backend && chown -R node:node /usr/src/todo-backend
 WORKDIR /usr/src/todo-backend
 
