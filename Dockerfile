@@ -21,10 +21,3 @@ COPY --from=builder /usr/src/todo-backend/public ./public
 RUN cat public/rev.txt
 USER node
 CMD ["dumb-init", "npm", "start"]
-
-FROM base as dev
-ENV NODE_ENV=development
-RUN npm install
-COPY . /.
-USER node
-CMD ["npm", "run", "watch"]
