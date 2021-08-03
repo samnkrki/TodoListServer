@@ -8,17 +8,6 @@ import routes from "./app/server.route";
 const port = config.port;
 const app = express();
 
-// mongoose.connect(config.dbPath)
-// var db = mongoose.connection
-
-// db.on('open', () => {
-//     console.log('connected to the database......')
-// })
-
-// db.on('error', (err) => {
-//     console.log(err)
-// })
-
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
