@@ -11,7 +11,7 @@
     "start": "node build/server.js",
     "dev": "NODE_ENV=development nodemon src/server.js"
   },
-  "author": "me",
+  "author": "samin karki",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.14.8",
